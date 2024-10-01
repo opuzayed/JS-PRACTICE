@@ -1,8 +1,12 @@
-//numeric number sort in descending order
-const numbers = [2, 4, 5, 7, 6, 3];
-console.log(numbers.sort(function(a, b){
-    return b-a;
-}));
-
+//check leap year
+function isLeapYear (year){
+    if((year % 400 === 0) || ((year % 4 === 0) && (year % 100 !==0))){
+        console.log(`${year} is a leap year`)
+    }
+    else{
+        console.log(`${year} is not a leap year`);
+    }
+}
+isLeapYear(2029);
 
 
