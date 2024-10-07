@@ -1,10 +1,21 @@
-const mixedArray = ['lws', undefined, 'learn with sumit', false, '', 'apple', 40, 'k', true, 'thanks all', NaN];
-const trueArray = mixedArray.filter(function(el){
-    if(el){
-        return true;
+const obj = {
+  a: "lws",
+  b: undefined,
+  c: "learn with sumit",
+  d: false,
+  e: "",
+  f: "apple",
+  g: 40,
+  h: "k",
+  i: true,
+  j: NaN,
+};
+const truthyObject = function(obj){
+ for(let i in obj){
+    if(!obj[i]){
+        delete obj[i];
     }
-    else{
-        return false;
-    }
-});
-console.log(trueArray);
+ }
+ return obj;
+}
+console.log(truthyObject(obj));
