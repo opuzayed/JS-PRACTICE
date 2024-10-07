@@ -1,10 +1,10 @@
-function linearSearch(arr, val){
-    const length = arr.length;
-    for(let i = 0; i < length; i++){
-        if(arr[i] === val){
-            return i;
-        }
+function longestString(names) {
+  let longestWord = "";
+  for(name of names){
+    if(name.length > longestWord.length){
+        longestWord = name;
     }
-    return 'not found';
+  }
+  return [longestWord, names.indexOf(longestWord)];
 }
-console.log(linearSearch(['a','b', 'c', 'd', 'c'], 'c'));
+console.log(longestString(["Hellohghgfhbgfbvfb", "koi geloollkjhm", "koi gelam"]));
