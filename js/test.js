@@ -1,8 +1,12 @@
-const javaScript = {
-  name: "javascvript",
-  libraries: ['react', 'angular', 'vue'], 
-  printLibraries: function(){
-    this.libraries.forEach((a) => console.log(`${this.name} loves ${a}`))
-  }
+const searchInput = document.querySelector(".search");
+const display = document.querySelector(".result");
+const thanks = document.querySelector(".thanks");
+
+function show(){
+  display.innerHTML = this.value;
+  let self = this;
+  setTimeout(function(){
+    thanks.innerHTML = `You Have Typed ${self.value}`;
+  }, 1000)
 }
-javaScript.printLibraries();
+searchInput.addEventListener("keyup", show);
