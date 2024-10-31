@@ -1,5 +1,5 @@
-const numbers = [2, 4, 6, 8];
-const result = numbers.map((num) => {
-    return num * 2;
-});
-console.log(result);
+const numbers = [12, 14, 16];
+const sum = numbers.reduce((prev, currentValue, currentIndex, array) => {
+        return prev + currentValue;
+}, 0);
+console.log(sum);
