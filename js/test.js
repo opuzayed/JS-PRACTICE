@@ -3,5 +3,7 @@ const myObj = {
         age: 26,
         estd: 'hero'
 };
-const result = Object.keys(myObj);
-console.log(result);
+const keys = Object.keys(myObj);
+const values = Object.values(myObj);
+const entries = Object.entries(myObj);
+console.log(entries);
