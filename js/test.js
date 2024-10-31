@@ -1,3 +1,5 @@
-const numbers = [1, 2, 3, 4, 5];
-const newNumbers = [...numbers, 6, 7, 8];
-console.log(newNumbers);
+function myFunc(a, ...params){
+console.log(a);
+console.log(params);
+}
+myFunc(2, 4, 5, 7);
