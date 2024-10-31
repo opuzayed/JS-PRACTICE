@@ -1,3 +1,5 @@
-let age = 8;
-let type = age >= 18 ? 'adult' : age < 18 ? 'child' : 'young';
-console.log(type);
+const numbers = [1, 2, 3, 4, 5, 6];
+const result = numbers.find(function(currentValue){
+return currentValue > 5;
+});
+console.log(result);
