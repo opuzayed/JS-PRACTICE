@@ -1,3 +1,7 @@
-const numbers = [2, 4, 6, [100, 200, 300], 8];
-const [, , , [, a, b] , ] = numbers;
+let a = 1;
+let b = 3;
+let temp = a;
+a = b;
+b = temp;
 console.log(a, b);
+
