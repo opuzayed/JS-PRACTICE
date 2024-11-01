@@ -1,5 +1,7 @@
-function myFunc(a, ...params){
-console.log(a);
-console.log(params);
+const user = {
+    id: 786,
+    name: 'opu',
+    age: 28
 }
-myFunc(2, 4, 5, 7);
+const {name} = user;
+console.log(name);
