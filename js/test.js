@@ -1,12 +1,3 @@
-const user = {
-  id: 786,
-  name: "opu",
-  age: 28,
-  education: {
-    degree: "Masters",
-  },
-};
-const {
-  education: { degree : title},
-} = user;
-console.log(title);
+const numbers = [2, 4, 6, 8];
+const [a, b] = numbers;
+console.log(a, b);
