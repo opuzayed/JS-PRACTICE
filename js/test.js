@@ -3,5 +3,5 @@ const user = {
     name: 'opu',
     age: 28
 }
-const {name} = user;
-console.log(name);
+const {name : title} = user;
+console.log(title);
